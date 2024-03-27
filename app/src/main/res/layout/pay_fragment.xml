@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="25dp"
+    android:paddingTop="75dp"
+    android:paddingEnd="25dp"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Укажите адрес доставки:"
+            android:textSize="28sp"
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/delivery_address_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+    <Button
+        android:id="@+id/pay_order_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/purple_700"
+        android:layout_marginTop="50dp"
+        android:text="Оплатить заказ" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
